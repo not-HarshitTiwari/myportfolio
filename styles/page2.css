@@ -1,0 +1,116 @@
+:root{
+  --primary-color : #101010;
+  --secondary-color : rgb(82, 255, 59);
+}
+
+#page2{
+  width: 100%;
+  height: 120vh;
+  background-color: var(--primary-color);
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 3%;
+  overflow-x: hidden;
+}
+
+.escr{
+  height: 23%;
+  margin: 0% 2%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  color: var(--primary-color);
+  gap: -1rem -1rem;
+}
+
+.escr:nth-child(1){
+  position: absolute;
+  top: 10%;
+  left: -5%;
+  rotate: 8deg;
+}
+.escr:nth-child(2){
+  position: absolute;
+  top: 37%;
+  right: -5%;
+  rotate: -8deg;
+}
+.escr:nth-child(3){
+  position: absolute;
+  top: 66%;
+  left: -5%;
+  rotate: 8deg;
+}
+#eat{
+  background-color: rgb(233, 233, 233);
+  height: 90%;
+  width: 85%;
+  font-size: 10rem;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 3rem;
+  /* box-shadow: 0rem 0.05rem 1rem 0rem var(--secondary-color); */
+}
+
+.circle{
+  height: 90%;
+  width: 15%;
+  border-radius: 0% 50% 50% 0%;
+  background-color: rgb(233, 233, 233);
+  /* box-shadow: 0rem 0.05rem 1rem  var(--secondary-color); */
+}
+
+#sleep{
+  background-color: rgb(233, 233, 233);
+  height: 90%;
+  width: 85%;
+  font-size: 10rem;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 3rem;
+}
+
+.circle:nth-child(1){
+  height: 90%;
+  width: 15%;
+  border-radius: 50% 0% 0% 50%;
+  background-color: rgb(233, 233, 233);
+}
+
+#code{
+  background-color: rgb(233, 233, 233);
+  height: 90%;
+  width: 85%;
+  font-size: 10rem;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 3rem;
+}
+
+#page2 button{
+  position: absolute;
+  background: linear-gradient(to left, var(--primary-color) 50%, var(--secondary-color) 50%) right;
+  background-size: 200%;
+  border: none;
+  color: white;
+  box-shadow: 0.1rem 0.1rem 1rem var(--secondary-color);
+  left: 50%;
+  bottom: 0.7%;
+  transform: translate(-50%,-50%);
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 1.3rem;
+  cursor: pointer;
+  transition:  0.2s linear;
+}
+
+#page2 button:hover{
+  background-position: left;
+  border: none;
+  color: #101010;
+}
+
+#page2 button:active{
+  scale: 0.95;
+}
