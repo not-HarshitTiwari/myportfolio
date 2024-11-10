@@ -4,9 +4,48 @@
   background-color: darkslategray;
 }
 
+
+#bugDiv{
+  position: relative;
+  width: 30vh;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #bug{
   height: 20vh;
   width: 20vh;
   border-radius: 10vh;
   background-color: black;
+}
+
+#msgCloud{
+  width:auto;
+  height: auto;
+}
+
+#leftCloud{
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  transform: translate(-100%, -100%);
+  width: 45vh;
+  height: 25vh;
+  object-fit: fill;
+  display: none;
+}
+
+
+
+#rightCloud{
+  position: absolute;
+  top: -40%;
+  right: -120%;
+  width: 45vh;
+  height: 25vh;
+  transform: scaleX(-1);
+  object-fit: fill;
+  display: none;
 }

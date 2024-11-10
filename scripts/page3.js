@@ -7,12 +7,12 @@ function generateCordinates() {
   xPos = Math.random() * 1031;
   yPos = Math.random() * (585 - 133) + 133;
 }
-// 0 133,1031 585
+// (0 133),(1031 585)
 
 function bugController() {
   if (flag === true) {
     generateCordinates();
-    tl.to("#bug", {
+    tl.to("#bugDiv", {
       x: xPos,
       y: yPos,
       duration: 2,
@@ -21,21 +21,36 @@ function bugController() {
   }
 }
 
+var msgLeft = document.querySelector("#leftCloud");
+var msgRight = document.querySelector("#rightCloud");
+function showMessage(dets){
+  if(dets.clientX>515){
+    msgLeft.style.display = "inline";
+  }
+  else if(dets.clientX<515){
+    msgRight.style.display = "inline";
+  }
+}
+
 document.getElementById("page2").addEventListener("mouseover", () => {
   flag = true;
   bugController();
 });
 
-document.getElementById("bug").addEventListener("mouseenter", (dets) => {
+var bug = document.getElementById("bug");
+bug.addEventListener("mouseenter", (dets) => {
   flag = false;
   tl.pause();
-  tl.set("#bug", {
+  showMessage(dets);
+  tl.set("#bugDiv", {
     x: dets.clientX - 50,
     y: dets.clientY - 50,
   });
 });
-document.getElementById("bug").addEventListener("mouseleave", () => {
+bug.addEventListener("mouseleave", () => {
   flag = true;
   tl.play();
+  msgLeft.style.display = "none";
+  msgRight.style.display = "none";
   bugController();
 });

@@ -55,3 +55,8 @@ nav ul li{
   margin-right: 1rem;
   cursor: pointer;
 }
+
+nav ul li i{
+  font-size: 1.5rem;
+  text-shadow: 0.1px 0.1px 0.1px var(--secondary-color);
+}
