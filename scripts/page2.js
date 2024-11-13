@@ -1,13 +1,14 @@
-gsap.from("#escr1",{
-  x:-1000,
-  y:-10,
+function escrAnimations(){
+gsap.from("#escr1", {
+  x: -1000,
+  y: -10,
   scrollTrigger: {
     scroller: "body",
     trigger: "#escr1",
     start: "top 65%",
     end: "top 40%",
-    scrub: 1
-  }
+    scrub: 1,
+  },
 });
 
 gsap.from("#escr2", {
@@ -32,4 +33,11 @@ gsap.from("#escr3", {
     end: "top 45%",
     scrub: 1,
   },
+});
+}
+
+escrAnimations();
+
+document.querySelector("#page2 button").addEventListener("click", ()=>{
+  window.scrollTo({top:0, behavior: "smooth"});
 });
