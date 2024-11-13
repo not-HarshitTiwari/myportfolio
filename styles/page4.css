@@ -1,7 +1,74 @@
+:root{
+  --primary-color : #101010;
+  --secondary-color : rgb(82, 255, 59);
+}
+
 #page4{
   height: 100vh;
   width: 100%;
-  align-items: center;
+  background-color: var(--primary-color);
+  position: relative;
+}
+
+#knowledge{
+  padding-top: 2rem;
+  height: 60vh;
+  width: 100%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  background-color: var(--primary-color);
+}
+
+.p4Heading{
+  display: flex;
+  flex-direction: column;
+}
+
+.underline1{
+  width: 0%;
+  height: 0.2rem;
+  background-color: white;
+}
+
+.logos4{
+  width: 100%;
+  height: 20vh;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.logos4 img{
+  width: 50px;
+  height: 50px;
+  filter: invert();
+  opacity: 0.5;
+  transition: all ease 0.3s;
+}
+
+.logos4 img:hover{
+  scale: 1.1 !important;
+  opacity: 0.7 !important;
+  filter: invert() drop-shadow(0px 0px 3px var(--secondary-color));
+}
+
+#learnMsg{
+  height: 40vh;
+  width: 100%;
+  background-color: rgb(233, 233, 233);
+  top: 0%;
+}
+
+#learnMsg h1{
+  font-weight: 400;
+  color: #101010;
+  font-size: 35vh;
+  text-transform: uppercase;
+  text-wrap: nowrap;
+}
+
+#learnMsg h1 span{
+  font-style: italic;
 }

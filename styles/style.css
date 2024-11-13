@@ -16,7 +16,8 @@ html, body{
 body{
   background-color: var(--primary-color);
   color: white;
-  font-family: "Oxanium",sans-serif; 
+  overflow-x: hidden;
+  font-family: "Oxanium",sans-serif;
 }
 
 body::-webkit-scrollbar{
