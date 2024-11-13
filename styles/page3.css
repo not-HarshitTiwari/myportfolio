@@ -2,8 +2,21 @@
   width: 100%;
   height: 100vh;
   background-color: darkslategray;
+  position: relative;
 }
 
+#page3 p{
+  font-size: 15vh;
+  text-wrap: nowrap;
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: "Dancing Script", cursive;
+  font-weight: 400;
+}
 
 #bugDiv{
   position: relative;
@@ -12,6 +25,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 100;
 }
 
 #bug{
@@ -19,11 +33,13 @@
   width: 20vh;
   border-radius: 10vh;
   background-color: black;
+  z-index: 100;
 }
 
 #msgCloud{
   width:auto;
   height: auto;
+  z-index: 100;
 }
 
 #leftCloud{
@@ -35,6 +51,7 @@
   height: 25vh;
   object-fit: fill;
   display: none;
+  z-index: 100;
 }
 
 
@@ -48,4 +65,5 @@
   transform: scaleX(-1);
   object-fit: fill;
   display: none;
+  z-index: 100;
 }
