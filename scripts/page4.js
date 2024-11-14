@@ -22,9 +22,9 @@ gsap.to("#langHeading div",{
   }
 });
 
-gsap.from("#langs img",{
-  opacity:0,
-  y: -20,
+gsap.to("#langs img",{
+  opacity:0.5,
+  y: 20,
   stagger: 5,
   scrollTrigger: {
     scroller: "body",
@@ -58,9 +58,9 @@ gsap.to("#frameworkHeading div", {
   },
 });
 
-gsap.from("#frameworks img", {
-  opacity: 0,
-  y: -20,
+gsap.to("#frameworks img", {
+  opacity: 0.5,
+  y: 20,
   stagger: 3,
   scrollTrigger: {
     scroller: "body",
