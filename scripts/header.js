@@ -56,3 +56,8 @@ function socialHandles() {
   });
 }
 socialHandles();
+
+
+document.querySelector(".ri-github-line").addEventListener("click", ()=>{
+  
+});

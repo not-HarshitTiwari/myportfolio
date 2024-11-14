@@ -28,21 +28,10 @@ nav{
 }
 
 #greeting{
-  /* background-color: red; */
   font-family: "Dancing Sctipt", cursive;
   display: flex;
   display: inline-block;
 }
-
-/* #blink{
-  animation: blink 1s infinite;
-}
-
-@keyframes blink{
-  50%{
-    opacity: 0;
-  }
-} */
 
 nav ul{
   display: flex;
@@ -50,13 +39,16 @@ nav ul{
   margin-right: 1rem;
   list-style: none;
 }
-
+a{
+  text-decoration: none;
+}
 nav ul li{
   margin-right: 1rem;
   cursor: pointer;
 }
 
 nav ul li i{
+  color: rgb(233, 233, 233);
   font-size: 1.5rem;
   text-shadow: 0.1px 0.1px 0.1px var(--secondary-color);
 }
