@@ -1,0 +1,42 @@
+footer{
+  width: 100%;
+  height: 30vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+footer a{
+  color: gray;
+  text-decoration: none;
+  margin-left: 2vh;
+  transition: all ease 0.2s;
+}
+
+footer h3{
+  color: gray;
+  font-size: 1vw;
+}
+
+.links{
+  width: 90%;
+  height: 80%;
+  display: flex;
+}
+
+.links div{
+  width: 33.33%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  border: to right 1px solid white;
+}
+
+footer a:hover{
+  color: white;
+  text-decoration: overline underline var(--secondary-color);
+  scale: 1.1;
+}

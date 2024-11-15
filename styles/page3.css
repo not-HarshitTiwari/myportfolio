@@ -6,7 +6,7 @@
 }
 
 #page3 p{
-  font-size: 15vh;
+  font-size: 12vw;
   text-wrap: nowrap;
   position: absolute;
   z-index: 0;
@@ -29,9 +29,9 @@
 }
 
 #bug{
-  height: 20vh;
-  width: 20vh;
-  border-radius: 10vh;
+  height: 10vw;
+  width: 10vw;
+  border-radius: 5vw;
   background-color: black;
   z-index: 100;
 }
@@ -47,7 +47,7 @@
   top: 40%;
   left: 30%;
   transform: translate(-100%, -100%);
-  width: 45vh;
+  width: 25vw;
   height: 25vh;
   object-fit: fill;
   display: none;
@@ -60,7 +60,7 @@
   position: absolute;
   top: -40%;
   right: -120%;
-  width: 45vh;
+  width: 25vw;
   height: 25vh;
   transform: scaleX(-1);
   object-fit: fill;

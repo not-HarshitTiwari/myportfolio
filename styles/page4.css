@@ -55,7 +55,7 @@
 }
 
 #learnMsg{
-  height: 40vh;
+  height: 20vw;
   width: 100%;
   background-color: rgb(233, 233, 233);
   top: 0%;
@@ -64,7 +64,7 @@
 #learnMsg h1{
   font-weight: 400;
   color: #101010;
-  font-size: 35vh;
+  font-size: 17vw;
   text-transform: uppercase;
   text-wrap: nowrap;
   letter-spacing: -1.2vh;
@@ -72,5 +72,5 @@
 
 #learnMsg h1 span{
   font-style: italic;
-  letter-spacing: 5vh;
+  letter-spacing: 2vh;
 }

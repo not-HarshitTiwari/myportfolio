@@ -26,17 +26,17 @@
 }
 
 #msg{
-  width: 50%;
+  width: 50vw;
 }
 
 #profile{
-  width: 30%;
-  height: 50%;
+  width: 30vw;
+  height: 30vw;
   background-color: darkblue;
 }
 
 .msgs{
-  font-size: 1.3rem;
+  font-size: 1.7vw;
   width: 100%;
   font-family: "Dancing Script",cursive;
   font-weight: 400;

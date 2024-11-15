@@ -18,7 +18,7 @@ nav{
   align-items: center;
   width: 100%;
   justify-content: space-between;
-  font-size: 1.25rem;
+  font-size: 1.5vw;
   margin: 0rem 2rem;
 }
 
@@ -49,6 +49,6 @@ nav ul li{
 
 nav ul li i{
   color: rgb(233, 233, 233);
-  font-size: 1.5rem;
+  font-size: 1.8vw;
   text-shadow: 0.1px 0.1px 0.1px var(--secondary-color);
 }
