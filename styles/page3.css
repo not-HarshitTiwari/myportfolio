@@ -1,7 +1,7 @@
 #page3{
   width: 100%;
   height: 100vh;
-  background-color: darkslategray;
+  background-color: green;
   position: relative;
 }
 
@@ -32,8 +32,8 @@
   height: 10vw;
   width: 10vw;
   border-radius: 5vw;
-  background-color: black;
   z-index: 100;
+  background-color: black;
 }
 
 #msgCloud{
@@ -48,7 +48,7 @@
   left: 30%;
   transform: translate(-100%, -100%);
   width: 25vw;
-  height: 25vh;
+  height: 30vh;
   object-fit: fill;
   display: none;
   z-index: 100;
@@ -58,11 +58,10 @@
 
 #rightCloud{
   position: absolute;
-  top: -40%;
+  top: -50%;
   right: -120%;
   width: 25vw;
-  height: 25vh;
-  transform: scaleX(-1);
+  height: 30vh;
   object-fit: fill;
   display: none;
   z-index: 100;
