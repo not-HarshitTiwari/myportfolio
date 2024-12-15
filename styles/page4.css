@@ -51,7 +51,7 @@
 .logos4 img:hover{
   scale: 1.1 !important;
   opacity: 0.7 !important;
-  filter: invert() drop-shadow(0px 0px 3px var(--secondary-color));
+  filter: invert() drop-shadow(0px 0px 3px var(--secondary-color)) !important;
 }
 
 #learnMsg{

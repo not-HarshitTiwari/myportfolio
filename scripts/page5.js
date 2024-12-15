@@ -23,7 +23,7 @@ function titleAnimation(){
   });
 
   gsap.to("#hfSpan", {
-    y: -50,
+    y: -43,
     opacity: 1,
     scrollTrigger: {
       scroller: "body",

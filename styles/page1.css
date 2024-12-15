@@ -1,8 +1,10 @@
 #page1{
-  height: 90vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: -50;
 }
 
 #page1 video{
@@ -27,12 +29,18 @@
 
 #msg{
   width: 50vw;
+  z-index: -2;
+  position: absolute;
+  right: 10%;
 }
 
-#profile{
-  width: 30vw;
-  height: 30vw;
+#profileMain{
+  width: 100vw;
+  height: 100vw;
   background-color: darkblue;
+  border-radius: 0;
+  position: absolute;
+  z-index: -1;
 }
 
 .msgs{

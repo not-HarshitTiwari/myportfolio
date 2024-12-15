@@ -1,7 +1,20 @@
-var xPos;
-var yPos;
+var xPos = 0;
+var yPos = 0;
 var flag;
 var tl = gsap.timeline();
+var rAngle = 0;
+
+function rotateBug() {
+  var xOld = xPos;
+  var yOld = yPos;
+  generateCordinates();
+  if (xOld - xPos < yOld - yPos) {
+    rAngle = yOld - yPos;
+  } else {
+    rAngle = xOld - xPos;
+  }
+  rAngle = rAngle / 12;
+}
 
 function generateCordinates() {
   xPos = Math.random() * 1031;
@@ -11,7 +24,11 @@ function generateCordinates() {
 
 function bugController() {
   if (flag === true) {
-    generateCordinates();
+    rotateBug();
+    gsap.to("#bug img", {
+      rotation: -rAngle,
+      duration: 1,
+    });
     tl.to("#bugDiv", {
       x: xPos,
       y: yPos,
@@ -23,11 +40,10 @@ function bugController() {
 
 var msgLeft = document.querySelector("#leftCloud");
 var msgRight = document.querySelector("#rightCloud");
-function showMessage(dets){
-  if(dets.clientX>515){
+function showMessage(dets) {
+  if (dets.clientX > 515) {
     msgLeft.style.display = "inline";
-  }
-  else if(dets.clientX<515){
+  } else if (dets.clientX < 515) {
     msgRight.style.display = "inline";
   }
 }
