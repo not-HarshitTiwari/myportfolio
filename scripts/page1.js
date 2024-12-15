@@ -35,7 +35,6 @@ function mainProfileAnimation() {
       trigger: "#page1",
       start: "top -6%",
       end: "top -10%",
-      markers: true,
       pin: true,
       scrub: 0.5,
     }
